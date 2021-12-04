@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ================ Start Header =============== */
+
+header {
+  background: url("../images/headerBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  align-items: center;
+}
+
+.logo-wrapper {
+}
+
+.logo-img {
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  margin-right: 40px;
+}
+
+.menu-item {
+  margin: 0 25px;
+}
+
+.menu-link {
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #93a5ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Nunito Bold";
+}
+
+.login-btn span {
+  margin-left: 10px;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.footer {
+  background: url("../images/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+  width: 100vw;
+  height: 30rem;
+}
+
+.about {
+  background-color: rgb(18, 35, 54);
+  color: #fff;
+  width: 31.25rem;
+  height: 14.063rem;
+  margin-top: 4.375rem;
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+  transition: transform 0.5s ease-in-out;
+}
+.about h4 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.about p {
+  font-weight: bold;
+  line-height: 1rem;
+}
+/* Contact Us */
+.socials {
+  background-color: rgb(18, 35, 54);
+  color: #fff;
+  width: 31.25rem;
+  height: 14.063rem;
+  margin-top: 4.375rem;
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+  transition: transform 0.5s ease-in-out;
+}
+.socials h4 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.social-icons li a i {
+  padding: 30px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  transition-property: color, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 100ms;
+}
+.social-icons li a i:hover {
+  color: rgb(236, 84, 173);
+  transform: scale(2);
+}
+
+.container-card {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-top: 30px;
+  position: relative;
+}
+.cards {
+  width: 25rem;
+  height: 50rem;
+  z-index: 1;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin: 1px;
+}
+
+.price {
+  display: inline-block;
+  margin-right: 15px;
+  float: right;
+  font-size: 1rem;
+}
+
+.container-star {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+  z-index: 2;
+}
+.star {
+  color: rgb(241, 206, 4);
+}
+.con-label {
+  position: relative;
+
+  z-index: 3;
+}
+.label {
+  position: relative;
+  left: 250px;
+  top: 5px;
+  background-color: rgb(139, 0, 0);
+  color: #fff;
+  border-radius: 40px 0px 0px 40px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+.img-card {
+  width: 100%;
+  height: 35rem;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 100ms;
+  margin-bottom: 20px;
+}
+.img-card:hover {
+  transform: scale(1.1);
+}
+
+.caption {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  z-index: 3;
+}
+
+.shop {
+  color: #fff;
+  background-color: rgb(0, 1, 83);
+  padding: 15px;
+  font-size: 1rem;
+  margin: auto;
+  border-radius: 100%;
+  transition: padding 800ms ease-in-out;
+}
+.shop:after {
+  float: right;
+  content: "add to shopping card";
+  display: none;
+
+  font-size: 0.7rem;
+  text-align: end;
+  padding: 5px 0 0 20px;
+}
+.shop:hover {
+  padding-right: 25px;
+  border-radius: 25px;
+}
+
+.shop:hover:after {
+  display: inline;
+}
+.heart {
+  color: #fff;
+  background-color: rgb(65, 0, 0);
+  padding: 15px;
+  font-size: 1rem;
+  margin: auto;
+  border-radius: 100%;
+  transition: padding 800ms ease-in-out;
+}
+.heart:after {
+  float: right;
+  content: "add to favorites";
+  display: none;
+  padding: 5px 0 0 20px;
+  font-size: 0.7rem;
+  text-align: end;
+}
+.heart:hover {
+  padding-right: 25px;
+  border-radius: 20px;
+}
+.heart:hover:after {
+  display: inline;
+}
